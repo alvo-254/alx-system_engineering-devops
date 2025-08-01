@@ -1,0 +1,5 @@
+#!/bin/bash
+water_len=${#WATER}
+stir_len=${#STIR}
+total=$((water_len + stir_len))
+echo "obase=$total; $water_len + $stir_len" | bc
