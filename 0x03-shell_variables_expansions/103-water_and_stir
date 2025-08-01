@@ -1,5 +1,2 @@
 #!/bin/bash
-water_len=${#WATER}
-stir_len=${#STIR}
-total=$((water_len + stir_len))
-echo "obase=$total; $water_len + $stir_len" | bc
+while read -r line; do ((n++%2)) && continue; echo "$line"; done
