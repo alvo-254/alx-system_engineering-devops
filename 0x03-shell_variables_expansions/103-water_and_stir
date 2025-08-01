@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((${#WATER}+${#STIR}))|tr -d '\\\n'
+printf "%o\n" $((${#WATER}+${#STIR}))
