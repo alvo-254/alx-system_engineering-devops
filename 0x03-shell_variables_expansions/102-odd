@@ -1,2 +1,2 @@
 #!/bin/bash
-while read -r line; do ((n++%2)) || echo "$line"; done
+while read -r line; do ((n++%2)) && continue; echo "$line"; done
