@@ -1,2 +1,7 @@
-#!/bin/bash
-while read -r line; do ((n++%2)) && continue; echo "$line"; done
+export WATER="ewwatratewa"
+export STIR="ti.itirtrtr"
+./103-water_and_stir  # Should output "shtbeolhc"
+
+export WATER="hello"
+export STIR="world"
+./103-water_and_stir  # Should output "10"
